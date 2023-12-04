@@ -1,5 +1,5 @@
 nav {
-  background-color: #0dcaf0;
+  background-color: black;
   height: 3.5rem;
   text-align: center;
 }
@@ -10,12 +10,11 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: #0dcaf0;
   font-size: 20px;
   transition: 0.2s ease;
 }
 nav a:hover {
-  border-bottom: 1px solid #292929;
   font-weight: bold;
   font-size: 21px;
 }
