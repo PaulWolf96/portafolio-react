@@ -1,8 +1,48 @@
-main {
-  background-color: black;
-  
+.descripcion-general h1 {
+  font-size: 50px;
+  color:rgb(8, 126, 164);
+  margin: 0;
+  height: 50px;
+}
+
+.section-info {
+  display: flex;
+  justify-content: center;
+  background-color: #e9edf7;
+  padding: 130px 0px;
 }
 
 .img-perfil img {
-  width: 400px;
+  width: 300px;
+}
+
+.descripcion-general {
+  display: flex;
+  width: 40%;
+  margin-left: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.subtitulo {
+  width: 50%;
+  height: 45px;
+  padding: .1rem 0;
+  font-size: 35px;
+  background-color: black;
+  color: white;
+}
+
+.descripcion-general p {
+  margin-top: 2rem;
+  font-size: large;
+}
+
+.img-globito {
+  margin-top: -8rem;
+  margin-left: -3.5rem;
+}
+
+.section-skills {
+  height: 600px;
 }

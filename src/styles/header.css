@@ -1,14 +1,20 @@
 nav {
-  background-color: black;
   height: 3.5rem;
   text-align: center;
 }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
 nav ul li {
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   list-style-type: none;
   display: inline-block;
 }
+
 nav a {
+  padding: 0.2rem 0.5rem;
   text-decoration: none;
   color: #0dcaf0;
   font-size: 20px;
