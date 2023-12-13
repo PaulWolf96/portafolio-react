@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .descripcion-general h1 {
   font-size: 50px;
   color:rgb(8, 126, 164);
@@ -9,7 +15,7 @@
   display: flex;
   justify-content: center;
   background-color: #e9edf7;
-  padding: 130px 0px;
+  padding: 250px 0px;
 }
 
 .img-perfil img {
@@ -26,23 +32,34 @@
 }
 .subtitulo {
   width: 50%;
-  height: 45px;
-  padding: .1rem 0;
-  font-size: 35px;
+  height: 55px;
+  margin-top: .7rem;
+  font-size: 36px;
   background-color: black;
+  border-radius: 5px;
   color: white;
 }
 
 .descripcion-general p {
   margin-top: 2rem;
-  font-size: large;
+  color: rgb(73, 83, 83);
+  font-size: 15px;
+  font-family: 'Verdana', sans-serif;
 }
 
 .img-globito {
-  margin-top: -8rem;
-  margin-left: -3.5rem;
+  margin-top: -7.5rem;
+  margin-left: -3.1rem;
 }
 
 .section-skills {
-  height: 600px;
+  background-color: rgb(229, 245, 245);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.section-projects {
+  height: 700px;
 }

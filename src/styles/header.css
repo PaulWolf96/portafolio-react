@@ -1,26 +1,23 @@
-nav {
-  height: 3.5rem;
-  text-align: center;
-}
-
-nav ul {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-nav ul li {
-  padding: 0.8rem 1.2rem;
-  list-style-type: none;
-  display: inline-block;
+
+nav {
+  height: 60px;
 }
 
-nav a {
-  padding: 0.2rem 0.5rem;
-  text-decoration: none;
-  color: #0dcaf0;
-  font-size: 20px;
-  transition: 0.2s ease;
-}
 nav a:hover {
   font-weight: bold;
-  font-size: 21px;
+  font-size: 21px !important;
+} 
+
+.nav-item .nav-link {
+  height: 25px;
+  text-decoration: none;
+  color: #0eb5d6 !important;
+  transition: 0.2s ease;
+  font-family: 'Anek Kannada', sans-serif;
+  padding: 0 2rem !important;
 }
