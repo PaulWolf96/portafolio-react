@@ -9,6 +9,7 @@ import NodeLogo from '../img/nodeLogo.png';
 import GitLogo from '../img/gitLogo.png';
 import GithubLogo from '../img/githubLogo.png';
 import MongoLogo from '../img/mongoLogo.png';
+import NextLogo from '../img/nextIcon.png';
 import '../styles/home.css';
 
 const Home = () => {
@@ -29,58 +30,60 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section-skills">
-        {/* carrousel */}
-        <div class="flecha">
-          <h4>Estas son las tecnologías que manejo</h4>
-          <i class="fa-solid fa-arrow-down fa-xl"></i>
-          <br /><br />
-        </div>
-        <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="4000">
-              <div className="row">
-                <div className="col d-flex align-items-center"><img src={HtmlLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo html" /></div>
-                <div className="col d-flex align-items-center"><img src={CssLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo css" /></div>
-                <div className="col d-flex align-items-center"><img src={JsLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo JS" /></div>
-              </div>
-            </div>
-            <div className="carousel-item" data-bs-interval="4000">
-              <div className="row">
-                <div className="col d-flex align-items-center"><img src={BootstrapLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo bootstrap" /></div>
-                <div className="col d-flex align-items-center"><img src={ReactLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo react" /></div>
-                <div className="col d-flex align-items-center"><img src={NodeLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo nodejs" /></div>
-              </div>
-            </div>
-            <div className="carousel-item" data-bs-interval="4000">
-              <div className="row">
-                <div className="col d-flex align-items-center"><img src={MongoLogo} width="90px"
-                  className="d-block mx-auto logo-carrusel" alt="logo mongodb" /></div>
-                <div className="col d-flex align-items-center"><img src={GitLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo git" /></div>
-                <div className="col d-flex align-items-center"><img src={GithubLogo} width="75px"
-                  className="d-block mx-auto logo-carrusel" alt="logo github" /></div>
-              </div>
-            </div>
+      <article>
+        <section className="section-skills">
+          {/* carrousel */}
+          <div class="flecha">
+            <h4>Estas son las tecnologías que manejo</h4>
+            <i class="fa-solid fa-arrow-down fa-xl"></i>
+            <br /><br />
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span><img src="img/nextIcon.png" alt="" width="25px" /></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
+          <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active" data-bs-interval="4000">
+                <div className="row">
+                  <div className="col d-flex align-items-center"><img src={HtmlLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo html" /></div>
+                  <div className="col d-flex align-items-center"><img src={CssLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo css" /></div>
+                  <div className="col d-flex align-items-center"><img src={JsLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo JS" /></div>
+                </div>
+              </div>
+              <div className="carousel-item" data-bs-interval="4000">
+                <div className="row">
+                  <div className="col d-flex align-items-center"><img src={BootstrapLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo bootstrap" /></div>
+                  <div className="col d-flex align-items-center"><img src={ReactLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo react" /></div>
+                  <div className="col d-flex align-items-center"><img src={NodeLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo nodejs" /></div>
+                </div>
+              </div>
+              <div className="carousel-item" data-bs-interval="4000">
+                <div className="row">
+                  <div className="col d-flex align-items-center"><img src={MongoLogo} width="90px"
+                    className="d-block mx-auto logo-carrusel" alt="logo mongodb" /></div>
+                  <div className="col d-flex align-items-center"><img src={GitLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo git" /></div>
+                  <div className="col d-flex align-items-center"><img src={GithubLogo} width="75px"
+                    className="d-block mx-auto logo-carrusel" alt="logo github" /></div>
+                </div>
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span><img src={NextLogo} alt="" width="25px" /></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section className="section-projects">Projects</section>
+      </article>
 
-      <section className="section-projects">Projects</section>
     </main>
   )
 }
