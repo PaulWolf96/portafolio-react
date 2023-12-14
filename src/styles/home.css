@@ -55,8 +55,8 @@ main {
 
 article {
   width: 100%;
-  background: rgb(158,255,255);
-  background: linear-gradient(0deg, rgba(158,255,255,1) 9%, rgba(158,229,252,1) 22%, rgba(102,228,255,1) 51%, rgba(135,227,253,1) 72%, rgba(158,229,252,1) 85%, rgba(233,237,247,1) 100%);
+  background: rgb(8,126,164);
+  background: linear-gradient(0deg, rgba(8,126,164,1) 0%, rgba(111,220,246,1) 33%, rgba(158,255,255,1) 47%, rgba(158,255,255,1) 60%, rgba(194,246,251,1) 74%, rgba(233,237,247,1) 100%);
 }
 
 .section-skills {

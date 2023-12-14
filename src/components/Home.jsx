@@ -10,9 +10,15 @@ import GitLogo from '../img/gitLogo.png';
 import GithubLogo from '../img/githubLogo.png';
 import MongoLogo from '../img/mongoLogo.png';
 import NextLogo from '../img/nextIcon.png';
+import '../../node_modules/animate.css';
 import '../styles/home.css';
 
+
 const Home = () => {
+
+
+  
+
   return (
     <main>
       <section className="section-info">
@@ -33,40 +39,40 @@ const Home = () => {
       <article>
         <section className="section-skills">
           {/* carrousel */}
-          <div class="flecha">
+          <div className="flecha">
             <h4>Estas son las tecnologías que manejo</h4>
-            <i class="fa-solid fa-arrow-down fa-xl"></i>
+            <i className="fa-solid fa-arrow-down fa-xl"></i>
             <br /><br />
           </div>
           <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active" data-bs-interval="4000">
                 <div className="row">
-                  <div className="col d-flex align-items-center"><img src={HtmlLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={HtmlLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo html" /></div>
-                  <div className="col d-flex align-items-center"><img src={CssLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={CssLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo css" /></div>
-                  <div className="col d-flex align-items-center"><img src={JsLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={JsLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo JS" /></div>
                 </div>
               </div>
               <div className="carousel-item" data-bs-interval="4000">
                 <div className="row">
-                  <div className="col d-flex align-items-center"><img src={BootstrapLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={BootstrapLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo bootstrap" /></div>
-                  <div className="col d-flex align-items-center"><img src={ReactLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={ReactLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo react" /></div>
-                  <div className="col d-flex align-items-center"><img src={NodeLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={NodeLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo nodejs" /></div>
                 </div>
               </div>
               <div className="carousel-item" data-bs-interval="4000">
                 <div className="row">
-                  <div className="col d-flex align-items-center"><img src={MongoLogo} width="90px"
+                  <div className="col d-flex align-items-center"><img src={MongoLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo mongodb" /></div>
-                  <div className="col d-flex align-items-center"><img src={GitLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={GitLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo git" /></div>
-                  <div className="col d-flex align-items-center"><img src={GithubLogo} width="75px"
+                  <div className="col d-flex align-items-center"><img src={GithubLogo} width="100px"
                     className="d-block mx-auto logo-carrusel" alt="logo github" /></div>
                 </div>
               </div>
@@ -76,7 +82,7 @@ const Home = () => {
               <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span><img src={NextLogo} alt="" width="25px" /></span>
+              <span><img src={NextLogo} alt="next" width="25px" /></span>
               <span className="visually-hidden">Next</span>
             </button>
           </div>

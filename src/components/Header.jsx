@@ -2,6 +2,10 @@ import '../styles/header.css';
 import { IoHome } from "../../node_modules/react-icons/io5";
 import { IoConstruct } from "react-icons/io5";
 import { IoAlbums } from "react-icons/io5";
+import '../../node_modules/animate.css';
+import LinkAnimation from './LinkAnimation';
+
+
 
 const Header = () => {
   return (
@@ -14,13 +18,19 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link fs-5 p-0" aria-current="page" href="#"><IoHome size='17' />Inicio</a>
+                <LinkAnimation>
+                  <IoHome size='17' />Inicio
+                </LinkAnimation>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5 p-0" href="#"><IoConstruct />Skills</a>
+                <LinkAnimation>
+                  <IoConstruct />Skills
+                </LinkAnimation>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5 p-0" href="#"><IoAlbums />Proyectos</a>
+                <LinkAnimation>
+                  <IoAlbums />Proyectos
+                </LinkAnimation>
               </li>
             </ul>
           </div>
