@@ -5,7 +5,7 @@ import Home from './components/Home'
 
 function App() {
   return (
-    <div className="div-principal">
+    <div style={{overflowX: 'hidden'}}>
       <Header />
       <Home />
       <Footer />
