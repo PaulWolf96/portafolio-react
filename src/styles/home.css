@@ -67,6 +67,13 @@ article {
   height: 600px;
 }
 
+.carousel {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 5rem 0;
+  margin: 0 2rem;
+}
+
 .fa-arrow-down {
   color:rgb(8, 126, 164);
   margin: 0 50%;
@@ -81,7 +88,7 @@ article {
 }
 
 .flecha {
-  padding: 3rem 0 0;
+  padding: 0 0 3rem;
 }
 
 .flecha h4 {
@@ -93,9 +100,52 @@ article {
   color:rgb(8, 126, 164);
 }
 
-
-
 .section-projects {
   width: 100%;
-  height: 700px;
+  height: 600px;
+  margin: 20rem 0;
+}
+
+.section-projects h4 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Anek Kannada', sans-serif;
+  margin-top: 5rem;
+  text-align: center;
+  color:rgb(8, 126, 164);
+  margin-bottom: 10rem;
+}
+
+.card {
+  background-color: rgb(0, 0, 0) !important;
+  border: none !important;
+  transition: 0.4s ease;
+}
+.card-body {
+  border-radius: 5px;
+  border-bottom: 1px #1bc3d5;
+  color: rgb(161, 179, 179) !important;
+  font-family: 'Anek Kannada', sans-serif;
+}
+.card:hover {
+  box-shadow: 0 5px 5px 5px #1bc3d5;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.card-title {
+  color: rgb(0, 195, 255) !important;
+}
+.cards {
+  margin: 0 auto 10rem;
+}
+.card-img-top {
+  height: 175px;
+}
+
+
+
+
+.section-contact {
+  width: 100%;
+  height: 600px;
 }
