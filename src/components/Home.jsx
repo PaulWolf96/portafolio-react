@@ -18,6 +18,8 @@ import '../../node_modules/animate.css';
 import '../styles/home.css';
 
 
+
+
 const Home = () => {
   return (
     <main>
@@ -48,7 +50,7 @@ const Home = () => {
           </div>
           <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="4000">
+              <div className="carousel-item active" data-bs-interval="3000">
                 <div className="row">
                   <div className="col d-flex align-items-center"><img src={HtmlLogo} width="110px"
                     className="d-block mx-auto logo-carrusel" alt="logo html" /></div>
@@ -93,46 +95,63 @@ const Home = () => {
         <section className="section-projects">
           <h4>Visitá mis páginas y proyectos</h4>
           <div className="container d-flex justify-content-between cards">
-            <div className="card" style={{width: '18rem'}}>
+            <div className="card" style={{ width: '18rem' }}>
               <img src={RedSocialImg} className="card-img-top" alt="imagen app" />
-                <div className="card-body">
-                  <h5 className="card-title">Mini Red Social</h5>
-                  <p className="card-text">Mini red social con react, bootstrap y localStorage. Se puede crear usuarios, publicar imágenes y hacer comentarios</p>
-                  <a href="https://mini-red-social.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                </div>
+              <div className="card-body">
+                <h5 className="card-title">Mini Red Social</h5>
+                <p className="card-text">Mini red social con react, bootstrap y localStorage. Se puede crear usuarios, publicar imágenes y hacer comentarios</p>
+                <a href="https://mini-red-social.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
+              </div>
             </div>
-            <div className="card" style={{width: '18rem'}}>
+            <div className="card" style={{ width: '18rem' }}>
               <img src={AppTareaImg} className="card-img-top" alt="imagen app" />
-                <div className="card-body">
-                  <h5 className="card-title">Mis Tareas</h5>
-                  <p className="card-text">App sencilla para crear tareas, con react y localStorage. Posibilidad para marcar como completadas y eliminarlas.</p>
-                  <a href="https://app-mistareas.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                </div>
+              <div className="card-body">
+                <h5 className="card-title">Mis Tareas</h5>
+                <p className="card-text">App sencilla para crear tareas, con react y localStorage. Posibilidad para marcar como completadas y eliminarlas.</p>
+                <a href="https://app-mistareas.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
+              </div>
             </div>
-            <div className="card" style={{width: '18rem'}}>
+            <div className="card" style={{ width: '18rem' }}>
               <img src={RelojDigitalImg} className="card-img-top" alt="imagen app" />
-                <div className="card-body">
-                  <h5 className="card-title">Reloj Digital</h5>
-                  <p className="card-text">App que muestra la hora actual en un reloj digital. <br /> Hecho con react.</p>
-                  <a href="https://app-reloj-digital.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                </div>
+              <div className="card-body">
+                <h5 className="card-title">Reloj Digital</h5>
+                <p className="card-text">App que muestra la hora actual en un reloj digital. <br /> Hecho con react.</p>
+                <a href="https://app-reloj-digital.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
+              </div>
             </div>
           </div>
           <div className="container d-flex cards">
-            <div className="card" style={{width: '18rem'}}>
+            <div className="card" style={{ width: '18rem' }}>
               <img src={CineCalidadImg} className="card-img-top" alt="imagen app" />
-                <div className="card-body">
-                  <h5 className="card-title">Neci-Calidad</h5>
-                  <p className="card-text">Clon de la página de películas "Cinecalidad". Hecha con React, React-router-dom, contextAPI y usando la API pública Themoviedb.</p>
-                  <a href="https://neci-calidad.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                </div>
+              <div className="card-body">
+                <h5 className="card-title">Neci-Calidad</h5>
+                <p className="card-text">Clon de la página de películas "Cinecalidad". Hecha con React, React-router-dom, contextAPI y usando la API pública Themoviedb.</p>
+                <a href="https://neci-calidad.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="section-contact">Contacto</section>
+        <section className="section-contact">
+          <div>
+            <h3>Contactame!</h3>
+            <form action="https://formsubmit.co/12aa1a5a544b4f5dd1253d57ea3c9b75" method="POST">
+              <div className="mb-3">
+                <input type="text" className="form-control" name="name" id="Name" rows="1" placeholder="Nombre" required />
+              </div>
+              <div className="mb-3">
+                <input type="email" className="form-control" name="email" id="Email" aria-describedby="emailHelp"
+                  placeholder="Email" required />
+              </div>
+              <div className="mb-3">
+                <textarea className="form-control" name="comentario" id="Textarea" rows="7"
+                  placeholder="Dejame un comentario..." required />
+              </div>
+              <button type="submit" className="btn btn-secondary">Enviar</button>
+            </form>
+          </div>
+        </section>
       </article>
-
     </main>
   )
 }
