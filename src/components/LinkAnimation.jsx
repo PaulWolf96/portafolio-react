@@ -2,7 +2,7 @@ import { useState } from "react";
 import '../../node_modules/animate.css';
 
 
-const LinkAnimation = ({children}) => {
+const LinkAnimation = ({children, href}) => {
 
   const [hovered, setHovered] = useState(false);
 
@@ -20,7 +20,7 @@ const LinkAnimation = ({children}) => {
   return (
     <a  
       className={className}
-      aria-current="page" href="#" 
+      aria-current="page" href={href} 
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
         {children}
