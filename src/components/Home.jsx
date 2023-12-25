@@ -44,7 +44,7 @@ const Home = () => {
       <article>
         <section className="section-skills" id='section-skills'>
           <div className="flecha">
-            <h4>Estas son las tecnologías que manejo</h4>
+            <h4>Tecnologías que manejo</h4>
             <i className="fa-solid fa-arrow-down fa-xl"></i>
             <br /><br />
           </div>
@@ -94,16 +94,16 @@ const Home = () => {
         </section>
 
         <section className="section-projects" id='section-projects'>
-          <h4>Visitá mis páginas y proyectos</h4>
+          <h4>Visita mis proyectos</h4>
           <div className="container d-flex justify-content-between cards">
             <div className="card" style={{ width: '18rem' }}>
               <img src={RedSocialImg} className="card-img-top" alt="imagen app" />
               <div className="card-body">
                 <h5 className="card-title">Mini Red Social</h5>
                 <p className="card-text">Mini red social con react, bootstrap y localStorage. Se puede crear usuarios, publicar imágenes y hacer comentarios</p>
-                <div className='div-btn-info'> 
+                <div className='div-btn-info'>
                   <a href="https://mini-red-social.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                  <a href="https://github.com/PaulWolf96/mini-red-social" target="_blank" className="btn btn-info">Ver Código</a>
+                  <a href="https://github.com/PaulWolf96/mini-red-social" target="_blank" className="btn btn-info">Código</a>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Home = () => {
                 <p className="card-text">App sencilla para crear tareas, con react y localStorage. Posibilidad para marcar como completadas y eliminarlas.</p>
                 <div className='div-btn-info'>
                   <a href="https://app-mistareas.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                  <a href="https://github.com/PaulWolf96/app-mistareas" target="_blank" className="btn btn-info">Ver Código</a>
+                  <a href="https://github.com/PaulWolf96/app-mistareas" target="_blank" className="btn btn-info">Código</a>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ const Home = () => {
                 <p className="card-text">App que muestra la hora actual en un reloj digital. <br /> Hecho con react.</p>
                 <div className='div-btn-info'>
                   <a href="https://app-reloj-digital.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                  <a href="https://github.com/PaulWolf96/app-reloj-digital" target="_blank" className="btn btn-info">Ver Código</a>
+                  <a href="https://github.com/PaulWolf96/app-reloj-digital" target="_blank" className="btn btn-info">Código</a>
                 </div>
               </div>
             </div>
@@ -138,7 +138,7 @@ const Home = () => {
                 <p className="card-text">Clon de la página de películas "Cinecalidad". Hecha con React, React-router-dom, contextAPI y usando la API pública Themoviedb.</p>
                 <div className='div-btn-info'>
                   <a href="https://neci-calidad.vercel.app/" target="_blank" className="btn btn-info">Visitar</a>
-                  <a href="https://github.com/PaulWolf96/Neci-Calidad" target="_blank" className="btn btn-info">Ver Código</a>
+                  <a href="https://github.com/PaulWolf96/Neci-Calidad" target="_blank" className="btn btn-info">Código</a>
                 </div>
               </div>
             </div>
@@ -146,25 +146,27 @@ const Home = () => {
         </section>
 
         <section className="section-contact" id='section-contact'>
-          <div className='div-img-correo animate__animated animate__backInUp'>
-            <img src={ImgCorreo} className='img-correo' alt="imagen correo" />
-          </div>
-          <div className='div-form'>
-            <h3>Contactame!</h3>
-            <form action="https://formsubmit.co/12aa1a5a544b4f5dd1253d57ea3c9b75" method="POST">
-              <div className="mb-3">
-                <input type="text" className="form-control" name="name" id="Name" rows="1" placeholder="Nombre" required />
-              </div>
-              <div className="mb-3">
-                <input type="email" className="form-control" name="email" id="Email" aria-describedby="emailHelp"
-                  placeholder="Email" required />
-              </div>
-              <div className="mb-3">
-                <textarea className="form-control" name="comentario" id="Textarea" rows="5"
-                  placeholder="Dejame un comentario..." required />
-              </div>
-              <button type="submit" className="btn btn-secondary w-100">Enviar</button>
-            </form>
+          <h4>Contactame!</h4>
+          <div className='div-container-contact'>
+            <div className='div-img-correo'>
+              <img src={ImgCorreo} className='img-correo' alt="imagen correo" />
+            </div>
+            <div className='div-form'>
+              <form action="https://formsubmit.co/12aa1a5a544b4f5dd1253d57ea3c9b75" method="POST">
+                <div className="mb-3">
+                  <input type="text" className="form-control-lg" name="name" id="Name" rows="1" placeholder="Nombre" required />
+                </div>
+                <div className="mb-3">
+                  <input type="email" className="form-control-lg" name="email" id="Email" aria-describedby="emailHelp"
+                    placeholder="Email" required />
+                </div>
+                <div className="mb-3">
+                  <textarea className="form-control-lg" name="comentario" id="Textarea" rows="4"
+                    placeholder="Dejame un comentario..." required />
+                </div>
+                <button type="submit" className="btn btn-secondary w-100">Enviar</button>
+              </form>
+            </div>
           </div>
         </section>
       </article>

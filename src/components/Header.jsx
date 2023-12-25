@@ -25,7 +25,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <LinkAnimation href='#section-skills' >
-                  <IoConstruct />Skills
+                  <IoConstruct />Habilidades
                 </LinkAnimation>
               </li>
               <li className="nav-item">
