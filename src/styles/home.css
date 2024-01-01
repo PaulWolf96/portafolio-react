@@ -133,7 +133,6 @@ article {
 .card {
   background-color: rgb(0, 0, 0) !important;
   border: none !important;
-  transition: 0.3s ease;
 }
 
 .card-body {
@@ -148,13 +147,14 @@ article {
 
 .card:hover {
   box-shadow: 0 5px 5px 5px #1bc3d5;
-  transform: translateY(-10px);
   cursor: pointer;
 }
 
 .card-title {
+  margin: 0 !important;
   color: rgb(0, 195, 255) !important;
 }
+
 .card-img-top {
   height: 175px;
 }
@@ -162,6 +162,19 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.row-cols-md-3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-card-clicked {
+  display: flex;
+  justify-content: center;
+}
+.card-clicked {
+  background-color: white !important;
 }
 
 

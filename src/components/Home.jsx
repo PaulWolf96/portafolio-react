@@ -1,24 +1,12 @@
 import LogoPerfil from '../img/perfil.png';
 import Globito from '../img/globito-dialogo.png';
-import HtmlLogo from '../img/htmlLogo.png';
-import CssLogo from '../img/cssLogo.png';
-import JsLogo from '../img/javascriptLogo.png';
-import ReactLogo from '../img/reactLogo.png';
-import BootstrapLogo from '../img/bootstrapLogo.png';
-import NodeLogo from '../img/nodeLogo.png';
-import GitLogo from '../img/gitLogo.png';
-import GithubLogo from '../img/githubLogo.png';
-import MongoLogo from '../img/mongoLogo.png';
-import NextLogo from '../img/nextIcon.png';
-import RedSocialImg from '../img/miniredsocial.png';
-import RelojDigitalImg from '../img/relojdigital.png';
-import AppTareaImg from '../img/app-tarea.png';
-import CineCalidadImg from '../img/cinecalidad.png';
 import ImgCorreo from '../img/imagenCorreo.jpg';
 import { motion } from "framer-motion";
 import '../../node_modules/animate.css';
 import '../styles/home.css';
-import Card from './Card';
+import Carousel from './Carousel';
+import Cards from './Cards';
+
 
 
 
@@ -47,49 +35,7 @@ const Home = () => {
             <i className="fa-solid fa-arrow-down fa-xl"></i>
             <br /><br />
           </div>
-          {/* carrousel */}
-          <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="3000">
-                <div className="row">
-                  <div className="col d-flex align-items-center"><img src={HtmlLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo html" /></div>
-                  <div className="col d-flex align-items-center"><img src={CssLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo css" /></div>
-                  <div className="col d-flex align-items-center"><img src={JsLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo JS" /></div>
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="3000">
-                <div className="row">
-                  <div className="col d-flex align-items-center"><img src={BootstrapLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo bootstrap" /></div>
-                  <div className="col d-flex align-items-center"><img src={ReactLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo react" /></div>
-                  <div className="col d-flex align-items-center"><img src={NodeLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo nodejs" /></div>
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="3000">
-                <div className="row">
-                  <div className="col d-flex align-items-center"><img src={MongoLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo mongodb" /></div>
-                  <div className="col d-flex align-items-center"><img src={GitLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo git" /></div>
-                  <div className="col d-flex align-items-center"><img src={GithubLogo} width="110px"
-                    className="d-block mx-auto logo-carrusel" alt="logo github" /></div>
-                </div>
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span><img src={NextLogo} alt="next" width="25px" /></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+          <Carousel />
         </section>
 
 
@@ -100,41 +46,7 @@ const Home = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "tween", duration: 1 }}
           >
-            <div className="row row-cols-1 row-cols-md-3 gy-5">
-              <Card 
-                img={RedSocialImg}
-                title="Mini Red Social"
-                text="Mini red social con react, bootstrap y localStorage. Se puede crear usuarios, publicar imágenes y hacer comentarios"
-                linkDeploy="https://mini-red-social.vercel.app/"
-                linkCode="https://github.com/PaulWolf96/mini-red-social"
-              />
-              <Card 
-                img={AppTareaImg}
-                title="Mis Tareas"
-                text="App sencilla para crear tareas, con react y localStorage. Posibilidad para marcar como completadas y eliminarlas."
-                linkDeploy="https://app-mistareas.vercel.app/"
-                linkCode="https://github.com/PaulWolf96/app-mistareas"
-              />
-              <Card 
-                img={RelojDigitalImg}
-                title="Reloj Digital"
-                text={
-                  <>
-                    App que muestra la hora actual en un reloj digital. <br />
-                    Hecho con React
-                  </>
-                }
-                linkDeploy="https://app-reloj-digital.vercel.app/"
-                linkCode="https://github.com/PaulWolf96/app-reloj-digital"
-              />
-              <Card 
-                img={CineCalidadImg}
-                title="Neci-Calidad"
-                text="Clon de la página de películas 'Cinecalidad'. Hecha con React, React-router-dom, contextAPI y usando la API pública Themoviedb."
-                linkDeploy="https://neci-calidad.vercel.app/"
-                linkCode="https://github.com/PaulWolf96/Neci-Calidad"
-              />
-            </div>
+              <Cards />
           </motion.div>
         </section>
 
