@@ -135,6 +135,7 @@ article {
   border: none !important;
 }
 
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -173,10 +174,16 @@ article {
   display: flex;
   justify-content: center;
 }
-.card-clicked {
-  background-color: white !important;
+.div-btn-close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2.2rem;
 }
-
+.btn-close {
+  background-color: #e6dcdc !important;
+  margin-right: 0.5rem !important;
+}
 
 .section-contact {
   display: flex;

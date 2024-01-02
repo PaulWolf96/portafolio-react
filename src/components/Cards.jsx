@@ -3,10 +3,8 @@ import { useState } from 'react';
 import ListCard from './ListCard';
 
 const Cards = () => {
-
   const [activeCard, setActiveCard] = useState(null);
   const [cards] = useState(ListCard);
-
 
   const handleCardClick = (card) => {
     setActiveCard(card);
@@ -17,45 +15,56 @@ const Cards = () => {
   };
 
   return (
-    activeCard ? 
-        <AnimatePresence> 
-          <motion.div className='container-card-clicked' >
-            <motion.div
-              className="card-modal card h-100 m-3 card-clicked"
-              style={{ width: '18rem' }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: 100 }}
-              exit={{ opacity: 0 }} >
-              <img src={activeCard.img} className="card-img-top" alt="imagen app" />
-              <div className="card-body">
-                <h5 className="card-title">{activeCard.title}</h5>
-                <motion.div>
-                  <p className="card-text"> {activeCard.text}</p>
-                  <div className='div-btn-info'>
-                    <a href={activeCard.linkDeploy} target="_blank" className="btn btn-info">Visitar</a>
-                    <a href={activeCard.linkCode} target="_blank" className="btn btn-info">Código</a>
-                  </div>
+    <AnimatePresence>
+      {activeCard && (
+        <motion.div
+          key="modal"
+          className="container-card-clicked z-1 position-relative"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <motion.div
+            className="card-modal card h-100 m-3"
+            style={{ width: '18rem' }}
+            initial={{ opacity: 0, y: 70 }}
+            animate={{ opacity: 1, y: -50 }}
+            exit={{ opacity: 0, x: 200 }}
+          >
+            <motion.div className='div-btn-close'>
+              <motion.button type="button" className="btn-close" data-bs-dismiss="card" aria-label="Close" onClick={handleCloseCard} />
+            </motion.div>
+            <motion.img src={activeCard.img} className="card-img-top" alt="imagen app" />
+            <motion.div className="card-body">
+              <motion.h5 className="card-title">{activeCard.title}</motion.h5>
+              <motion.div>
+                <motion.p className="card-text">{activeCard.text}</motion.p>
+                <motion.div className="div-btn-info">
+                  <motion.a href={activeCard.linkDeploy} target="_blank" className="btn btn-info">
+                    Visitar
+                  </motion.a>
+                  <motion.a href={activeCard.linkCode} target="_blank" className="btn btn-info">
+                    Código
+                  </motion.a>
                 </motion.div>
-              </div>
-              <button onClick={handleCloseCard}>Cerrar</button>
+              </motion.div>
             </motion.div>
           </motion.div>
-      </AnimatePresence>
-      
-      :
+        </motion.div>
+      )}
 
-      
-        <motion.div className='container d-flex'>
+      <motion.div className="container d-flex z-0 position-relative">
         {cards.map((card) => (
           <motion.div
             key={card.id}
-            className="card h-100 p-0 m-3" style={{ width: '16rem', opacity: 0.8 }}
+            className="card h-100 p-0 m-3"
+            style={ activeCard ? { width: '15rem', opacity: 0.8 } : {width: '18rem'} }
             whileHover={{ scale: 1.1 }}
             transition={{
               layout: {
                 duration: 1,
-                type: "spring"
-              }
+                type: 'spring',
+              },
             }}
             layout
             onClick={() => handleCardClick(card)}
@@ -66,9 +75,9 @@ const Cards = () => {
             </div>
           </motion.div>
         ))}
-      </motion.div>  
-  )  
-}
-
+      </motion.div>
+    </AnimatePresence>
+  );
+};
 
 export default Cards;
