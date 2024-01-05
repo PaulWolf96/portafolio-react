@@ -14,7 +14,7 @@ const Carousel = () => {
   return (
     <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel">
       <div className="carousel-inner">
-        <div className="carousel-item active" data-bs-interval="3000">
+        <div className="carousel-item active" data-bs-interval="2000">
           <div className="row">
             <div className="col d-flex align-items-center"><img src={HtmlLogo} width="110px"
               className="d-block mx-auto logo-carrusel" alt="logo html" /></div>
@@ -24,7 +24,7 @@ const Carousel = () => {
               className="d-block mx-auto logo-carrusel" alt="logo JS" /></div>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="3000">
+        <div className="carousel-item" data-bs-interval="2000">
           <div className="row">
             <div className="col d-flex align-items-center"><img src={BootstrapLogo} width="110px"
               className="d-block mx-auto logo-carrusel" alt="logo bootstrap" /></div>
@@ -34,7 +34,7 @@ const Carousel = () => {
               className="d-block mx-auto logo-carrusel" alt="logo nodejs" /></div>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="3000">
+        <div className="carousel-item" data-bs-interval="2000">
           <div className="row">
             <div className="col d-flex align-items-center"><img src={MongoLogo} width="110px"
               className="d-block mx-auto logo-carrusel" alt="logo mongodb" /></div>

@@ -19,7 +19,7 @@ const Cards = () => {
       {activeCard && (
         <motion.div
           key="modal"
-          className="container-card-clicked z-1 position-relative"
+          className="container-card-clicked"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -53,7 +53,7 @@ const Cards = () => {
         </motion.div>
       )}
 
-      <motion.div className="container d-flex z-0 position-relative">
+      <motion.div className="container d-flex">
         {cards.map((card) => (
           <motion.div
             key={card.id}
