@@ -5,7 +5,7 @@ import Home from './components/Home'
 
 function App() {
   return (
-    <div style={{overflowX: 'hidden'}}>
+    <div className='container-fluid p-0' style={{overflowX: 'hidden'}}>
       <Header />
       <Home />
       <Footer />
