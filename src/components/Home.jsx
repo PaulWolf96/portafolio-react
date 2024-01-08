@@ -1,5 +1,4 @@
 import LogoPerfil from '../img/perfil.png';
-import Globito from '../img/globito-dialogo.png';
 import ImgCorreo from '../img/imagenCorreo.jpg';
 import { motion } from "framer-motion";
 import '../../node_modules/animate.css';
@@ -24,7 +23,6 @@ const Home = () => {
             Estoy buscando mi primera experiencia laboral como desarrollador web. Tengo muchas ganas de entrar al mundo IT y
             poder crecer en él ya que siempre me interesó la programación.
           </p>
-          <img src={Globito} alt="" className="img-globito" width="600px"></img>
         </div>
       </section>
 
