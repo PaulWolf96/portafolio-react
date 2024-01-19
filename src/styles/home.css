@@ -122,11 +122,12 @@ article {
   margin-top: 3rem;
   text-align: center;
   color: rgb(8, 126, 164);
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .section-projects .div-list-card {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 } 
 
@@ -318,6 +319,10 @@ article {
 
   .logo-carrusel {
     width: 60%;
+  }
+
+  .section-projects {
+    height: 1750px;
   }
 
   .section-projects .container {
