@@ -53,7 +53,7 @@ const Cards = () => {
         </motion.div>
       )}
 
-      <motion.div className="container d-flex">
+      <motion.div className="container div-list-card">
         {cards.map((card) => (
           <motion.div
             key={card.id}

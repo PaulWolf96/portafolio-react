@@ -2,6 +2,7 @@ import RedSocialImg from '../img/miniredsocial.png';
 import RelojDigitalImg from '../img/relojdigital.png';
 import AppTareaImg from '../img/app-tarea.png';
 import CineCalidadImg from '../img/cinecalidad.png';
+import ClimappImg from '../img/climapp3.png';
 
 const ListCard = () => {
   return (
@@ -37,6 +38,14 @@ const ListCard = () => {
         text: "Clon de la página de películas 'Cinecalidad'. Hecha con React, React-router-dom, contextAPI y usando la API pública Themoviedb.",
         linkDeploy: "https://neci-calidad.vercel.app/",
         linkCode: "https://github.com/PaulWolf96/Neci-Calidad"
+      },
+      {
+        id: 5,
+        img: ClimappImg,
+        title: "Climapp",
+        text: "App sencilla para consultar el clima de cualquier parte del mundo usando la api openweathermap. También muestra la hora local de la ubicación con timezoneDB.",
+        linkDeploy: "https://climapp-tan.vercel.app/",
+        linkCode: "https://github.com/PaulWolf96/app-clima"
       }
     ]
   )
